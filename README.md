@@ -10,3 +10,9 @@ UDDI - We can query UDDI to know about a web service, once the service is up, it
 SOAP - Encode and Decode message over the network. It's a protocol.
 
 SEI - Service Endpoint Interface - access an interface to ws endpoint. Translates a ws call to a soap message in XML format.
+
+## Writing a SOAP client
+Need a URL to the wsdl file.
+`wsimport -keep -s src url`
+
+Add the generated source files to src folder and in corresponding package.
